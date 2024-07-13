@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*when calucating width height disregard padings borders*/
+    font-family: 'Roboto', Arial, sans-serif;
+  } 
+
+  .main{
+    min-height:100vh;
+    background: linear-gradient(150deg, #006D77, #83C5BE, #EDF6F9);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .main h1{
+    color:#FFF7E6;
+    font-size: 45px;
+    font-weight: 500;
+    margin-top:-50px;
+    margin-bottom: 50px;
+
+  }
+  .main h1 span{
+    color:#006D77;
+  }
+
+  textarea{
+    width:600px;
+    height:500px;
+    background-color: #FFF7E6;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    resize: none;    /*this makes the textarea not resizable*/
+    color:#006D77;
+    margin-bottom:50px;
+  }
+  textarea::placeholder{
+    color:#8D99AE;
+    font-size:20px;
+  }
+
+  .bottom{
+    display:flex;
+    align-items: center;
+    gap:20px;     /*setting a manual gap other than space-between*/
+    /* justify-content: space-between;   this sets all the gap between the elements */
+  }
+  
+  button{
+    background-color: #006D77;
+    color:#FFF7E6;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    gap:10px;
+  }
+ 
+select{
+  color:#FFF7E6;
+  background-color:#006D77;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  height:50px;
+  border-radius: 35px;
+  width:400px;
+  appearance: none; /*to remove default dropdown arrow*/
+
+  background-image: url(images/dropdown.png);     /* to add custom dropdown arrow */
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: calc(100% - 20px) center; /*it sets 20px from right and center vertically*/
+}
